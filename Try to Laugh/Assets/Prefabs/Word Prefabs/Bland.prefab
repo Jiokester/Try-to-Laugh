@@ -29,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2207792226986286808}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 5.3, y: 1.9, z: 1}
   m_ConstrainProportionsScale: 0
@@ -148,6 +148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 8785499744540531553}
+  parentScript: {fileID: 0}
 --- !u!1 &4732407070922614932
 GameObject:
   m_ObjectHideFlags: 0
@@ -241,7 +242,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8901366089786138303}
-  - component: {fileID: 1041887286999535819}
+  - component: {fileID: 2684171156082496293}
   m_Layer: 0
   m_Name: Bland
   m_TagString: Untagged
@@ -265,7 +266,7 @@ Transform:
   - {fileID: 7026365825030922894}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1041887286999535819
+--- !u!114 &2684171156082496293
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -283,5 +284,5 @@ MonoBehaviour:
   storageScript: {fileID: 0}
   speed: 1
   health: 1
-  adj: 0
+  adj: 1
   verb: 0

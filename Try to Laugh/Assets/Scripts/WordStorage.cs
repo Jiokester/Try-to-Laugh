@@ -50,12 +50,6 @@ public class WordStorage : MonoBehaviour
     public GameObject nounPos4;
     public GameObject nounPos5;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -74,6 +68,5 @@ public class WordStorage : MonoBehaviour
             nounsFull = true;
             nounCount = 0;
         }
-
     }
 }

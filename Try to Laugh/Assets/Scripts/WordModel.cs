@@ -4,16 +4,20 @@ using UnityEngine;
 
 /// <summary>
 /// Monaghan, Devin
-/// 02/03/2024
+/// 02/04/2024
 /// lock the model's rotation without changing its parent rotation
+/// handle word's collisions
 /// </summary>
 
 public class WordModel : MonoBehaviour
 {
     // references parent empty
     public GameObject parent;
+
+    // references Word script
     public Word parentScript;
 
+    // Start is called before the first frame update
     private void Start()
     {
         parentScript = parent.GetComponent<Word>();
@@ -26,20 +30,12 @@ public class WordModel : MonoBehaviour
         transform.localRotation = Quaternion.Inverse(parent.transform.localRotation);
     }
 
-
-    // handles trigger collisions
+    // handles word's trigger collisions
     private void OnTriggerEnter(Collider other)
     {
-        print("collided");
-
-
         // when word touches a bullet subtract one health, destroy the bullet
         if (other.gameObject.tag == "Bullet")
         {
-            print("collided with bullet");
-
-
-
             parentScript.health--;
             Destroy(other.gameObject);
 

@@ -148,6 +148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 8785499744540531553}
+  parentScript: {fileID: 0}
 --- !u!1 &8785499744540531553
 GameObject:
   m_ObjectHideFlags: 0
@@ -157,7 +158,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8901366089786138303}
-  - component: {fileID: 1041887286999535819}
+  - component: {fileID: 87986454941432834}
   m_Layer: 0
   m_Name: Idea
   m_TagString: Untagged
@@ -181,7 +182,7 @@ Transform:
   - {fileID: 7026365825030922894}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1041887286999535819
+--- !u!114 &87986454941432834
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
