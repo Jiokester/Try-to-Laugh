@@ -66,44 +66,108 @@ public class Word : MonoBehaviour
         wordSpawner.GetComponent<WordSpawner>().wordCount--;
     }
 
-    // handles trigger collisions
-    private void OnTriggerEnter(Collider other)
-    {
-        // when word touches a bullet subtract one health, destroy the bullet
-        if (other.tag == "Bullet")
-        {
-            health--;
-            Destroy(other.gameObject);
-
-            // if health reaches 0 collect the word
-            if (health <= 0)
-            {
-                CollectWord();
-            }
-        }
-    }
-
     // set word inactive and add it to the word storage
-    private void CollectWord()
+    public void CollectWord()
     {
-        
-        if (adj && storageScript.adjsFull)
+        // if a word's type's storage list is not full add it to the list and move it to storage position
+        if (adj && !storageScript.adjsFull)
         {
+            // add word to storage list
             storageScript.adjectives.Add(this.gameObject);
+            // move word to position in storage based on number of words in list
+            switch (storageScript.adjCount)
+            {
+                case 0:
+                    transform.position = storageScript.adjPos0.transform.position;
+                    break;
+                case 1:
+                    transform.position = storageScript.adjPos1.transform.position;
+                    break;
+                case 2:
+                    transform.position = storageScript.adjPos2.transform.position;
+                    break;
+                case 3:
+                    transform.position = storageScript.adjPos3.transform.position;
+                    break;
+                case 4:
+                    transform.position = storageScript.adjPos4.transform.position;
+                    break;
+                case 5:
+                    transform.position = storageScript.adjPos5.transform.position;
+                    break;
+                default:
+                    break;
+            }
+            // increment count of words in list
+            storageScript.adjCount++;
         }
-        else if (verb && storageScript.adjsFull)
+        else if (verb && !storageScript.adjsFull)
         {
+            // add word to storage list
             storageScript.verbs.Add(this.gameObject);
+            // move word to position in storage based on number of words in list
+            switch (storageScript.verbCount)
+            {
+                case 0:
+                    transform.position = storageScript.verbPos0.transform.position;
+                    break;
+                case 1:
+                    transform.position = storageScript.verbPos1.transform.position;
+                    break;
+                case 2:
+                    transform.position = storageScript.verbPos2.transform.position;
+                    break;
+                case 3:
+                    transform.position = storageScript.verbPos3.transform.position;
+                    break;
+                case 4:
+                    transform.position = storageScript.verbPos4.transform.position;
+                    break;
+                case 5:
+                    transform.position = storageScript.verbPos5.transform.position;
+                    break;
+                default:
+                    break;
+            }
+            // increment count of words in list
+            storageScript.verbCount++;
+
         }
-        else if (storageScript.nounsFull)
+        else if (!storageScript.nounsFull)
         {
+            // add word to storage list
             storageScript.nouns.Add(this.gameObject);
+            // move word to position in storage based on number of words in list
+            switch (storageScript.nounCount)
+            {
+                case 0:
+                    transform.position = storageScript.nounPos0.transform.position;
+                    break;
+                case 1:
+                    transform.position = storageScript.nounPos1.transform.position;
+                    break;
+                case 2:
+                    transform.position = storageScript.nounPos2.transform.position;
+                    break;
+                case 3:
+                    transform.position = storageScript.nounPos3.transform.position;
+                    break;
+                case 4:
+                    transform.position = storageScript.nounPos4.transform.position;
+                    break;
+                case 5:
+                    transform.position = storageScript.nounPos5.transform.position;
+                    break;
+                default:
+                    break;
+            }
+            // increment count of words in list
+            storageScript.nounCount++;
         }
         else
         {
+            print("lists were full");
             Destroy(this.gameObject);
         }
-
-        this.gameObject.SetActive(false);
     }
 }

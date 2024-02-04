@@ -29,9 +29,26 @@ public class WordStorage : MonoBehaviour
     public List<GameObject> nouns = new List<GameObject>();
 
     /// <summary>
-    /// 
+    /// all position references
     /// </summary>
-    
+    public GameObject verbPos0;
+    public GameObject verbPos1;
+    public GameObject verbPos2;
+    public GameObject verbPos3;
+    public GameObject verbPos4;
+    public GameObject verbPos5;
+    public GameObject adjPos0;
+    public GameObject adjPos1;
+    public GameObject adjPos2;
+    public GameObject adjPos3;
+    public GameObject adjPos4;
+    public GameObject adjPos5;
+    public GameObject nounPos0;
+    public GameObject nounPos1;
+    public GameObject nounPos2;
+    public GameObject nounPos3;
+    public GameObject nounPos4;
+    public GameObject nounPos5;
 
     // Start is called before the first frame update
     void Start()

@@ -245,6 +245,24 @@ MonoBehaviour:
   adjectives: []
   verbs: []
   nouns: []
+  verbPos0: {fileID: 4544884846193360917}
+  verbPos1: {fileID: 8355247615356584691}
+  verbPos2: {fileID: 7882558081824483914}
+  verbPos3: {fileID: 6579093925343025160}
+  verbPos4: {fileID: 7854736975076484121}
+  verbPos5: {fileID: 7020506614039500297}
+  adjPos0: {fileID: 6137301008079107547}
+  adjPos1: {fileID: 4225811962319601269}
+  adjPos2: {fileID: 1783547234131804153}
+  adjPos3: {fileID: 7748506080598614533}
+  adjPos4: {fileID: 7928522447605860903}
+  adjPos5: {fileID: 970574835581717521}
+  nounPos0: {fileID: 972144575692573705}
+  nounPos1: {fileID: 3711432711874240734}
+  nounPos2: {fileID: 8551875247769109153}
+  nounPos3: {fileID: 628547795123136927}
+  nounPos4: {fileID: 5420491934977301467}
+  nounPos5: {fileID: 905414275887235318}
 --- !u!1 &2776146557920340234
 GameObject:
   m_ObjectHideFlags: 0
