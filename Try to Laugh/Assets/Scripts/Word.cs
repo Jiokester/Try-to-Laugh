@@ -32,6 +32,7 @@ public class Word : MonoBehaviour
     public bool adj = false;
     public bool verb = false;
 
+    // whether or not the word has been collected by the storage
     private bool collected = false;
 
     // Start is called before the first frame
@@ -93,36 +94,29 @@ public class Word : MonoBehaviour
             {
                 case 0:
                     transform.position = storageScript.adjPos0.transform.position;
-                    print("added adj 1");
                     break;
                 case 1:
                     transform.position = storageScript.adjPos1.transform.position;
-                    print("added adj 2");
                     break;
                 case 2:
                     transform.position = storageScript.adjPos2.transform.position;
-                    print("added adj 3");
                     break;
                 case 3:
                     transform.position = storageScript.adjPos3.transform.position;
-                    print("added adj 4");
                     break;
                 case 4:
                     transform.position = storageScript.adjPos4.transform.position;
-                    print("added adj 5");
                     break;
                 case 5:
                     transform.position = storageScript.adjPos5.transform.position;
-                    print("added adj 6");
                     break;
                 default:
-                    print("added no adj");
                     break;
             }
             // increment count of words in list
             storageScript.adjCount++;
         }
-        else if (verb && !adj && !storageScript.adjsFull)
+        else if (verb && !adj && !storageScript.verbsFull)
         {
             // add word to storage list
             storageScript.verbs.Add(this.gameObject);
@@ -131,30 +125,23 @@ public class Word : MonoBehaviour
             {
                 case 0:
                     transform.position = storageScript.verbPos0.transform.position;
-                    print("added verb 1");
                     break;
                 case 1:
                     transform.position = storageScript.verbPos1.transform.position;
-                    print("added verb 2");
                     break;
                 case 2:
                     transform.position = storageScript.verbPos2.transform.position;
-                    print("added verb 3");
                     break;
                 case 3:
                     transform.position = storageScript.verbPos3.transform.position;
-                    print("added verb 4");
                     break;
                 case 4:
                     transform.position = storageScript.verbPos4.transform.position;
-                    print("added verb 5");
                     break;
                 case 5:
                     transform.position = storageScript.verbPos5.transform.position;
-                    print("added verb 6");
                     break;
                 default:
-                    print("added no verb");
                     break;
             }
             // increment count of words in list
@@ -169,30 +156,23 @@ public class Word : MonoBehaviour
             {
                 case 0:
                     transform.position = storageScript.nounPos0.transform.position;
-                    print("added noun 1");
                     break;
                 case 1:
                     transform.position = storageScript.nounPos1.transform.position;
-                    print("added noun 2");
                     break;
                 case 2:
                     transform.position = storageScript.nounPos2.transform.position;
-                    print("added noun 3");
                     break;
                 case 3:
                     transform.position = storageScript.nounPos3.transform.position;
-                    print("added noun 4");
                     break;
                 case 4:
                     transform.position = storageScript.nounPos4.transform.position;
-                    print("added noun 5");
                     break;
                 case 5:
                     transform.position = storageScript.nounPos5.transform.position;
-                    print("added noun 6");
                     break;
                 default:
-                    print("added no noun");
                     break;
             }
             // increment count of words in list
@@ -200,8 +180,8 @@ public class Word : MonoBehaviour
         }
         else
         {
-            print("all lists were full");
-            Destroy(this.gameObject);
+            print("list was full");
+            RemoveWord();
         }
     }
 }

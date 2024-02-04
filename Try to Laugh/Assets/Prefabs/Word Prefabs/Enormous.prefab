@@ -214,7 +214,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 120
@@ -283,6 +283,6 @@ MonoBehaviour:
   wordStorage: {fileID: 0}
   storageScript: {fileID: 0}
   speed: 1
-  health: 1
+  health: 2
   adj: 1
   verb: 0
