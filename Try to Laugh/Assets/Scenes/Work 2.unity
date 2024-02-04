@@ -267,10 +267,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2192798100238522560, guid: 88d1096f836f1b048b89baa4e675f2b9, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -1.5
-      objectReference: {fileID: 0}
     - target: {fileID: 2342261270219506179, guid: 88d1096f836f1b048b89baa4e675f2b9, type: 3}
       propertyPath: m_Name
       value: WordStorage
@@ -314,22 +310,6 @@ PrefabInstance:
     - target: {fileID: 4124136356212705267, guid: 88d1096f836f1b048b89baa4e675f2b9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5765675803490119860, guid: 88d1096f836f1b048b89baa4e675f2b9, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 9146326735664977072, guid: 88d1096f836f1b048b89baa4e675f2b9, type: 3}
-      propertyPath: adjNum
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 9146326735664977072, guid: 88d1096f836f1b048b89baa4e675f2b9, type: 3}
-      propertyPath: nounNum
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 9146326735664977072, guid: 88d1096f836f1b048b89baa4e675f2b9, type: 3}
-      propertyPath: verbNum
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -535,9 +515,9 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 568085216282085653}
   - {fileID: 6191669496213906253}
+  - {fileID: 568085216282085653}
   - {fileID: 7346928066804367529}
+  - {fileID: 1512331653}
   - {fileID: 3866383860423587045}
   - {fileID: 3771040038290592396}
-  - {fileID: 1512331653}

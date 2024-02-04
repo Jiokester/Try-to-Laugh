@@ -233,9 +233,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 793007fb9048faf43a11b67b9ffd8d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  adjNum: 0
-  verbNum: 0
-  nounNum: 0
+  adjNum: 6
+  verbNum: 6
+  nounNum: 6
   adjCount: 0
   verbCount: 0
   nounCount: 0
@@ -640,7 +640,7 @@ Transform:
   m_GameObject: {fileID: 4733726503483193231}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -5}
+  m_LocalPosition: {x: -1.5, y: 0, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -794,7 +794,7 @@ Transform:
   m_GameObject: {fileID: 5389755553243524853}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -5}
+  m_LocalPosition: {x: 1.5, y: 0, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

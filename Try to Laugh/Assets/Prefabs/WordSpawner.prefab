@@ -48,9 +48,9 @@ MonoBehaviour:
   wordStorage: {fileID: 0}
   wordCount: 0
   wordLimit: 20
-  spawnCircleRadius: 20
-  deathCircleRadius: 25
-  fastestSpeed: 10
+  spawnCircleRadius: 40
+  deathCircleRadius: 45
+  fastestSpeed: 7
   slowestSpeed: 1
   words: []
   bamboozle: {fileID: 8785499744540531553, guid: 419ee446c4762a1489dbe76d4ab84153, type: 3}
