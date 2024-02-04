@@ -10,11 +10,13 @@ using UnityEngine;
 
 public class WordModel : MonoBehaviour
 {
+    // references parent empty
     public GameObject parent;
 
     // Update is called once per frame
     void Update()
     {
+        // set the model's rotation to invers of the parent empty's
         transform.localRotation = Quaternion.Inverse(parent.transform.localRotation);
     }
 }

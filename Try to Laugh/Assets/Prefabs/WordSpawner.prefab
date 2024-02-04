@@ -45,10 +45,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameArea: {fileID: 0}
-  wordPrefab: {fileID: 133363509201759586, guid: 63ece1b039ff7a0409d46d0976d56780, type: 3}
+  wordStorage: {fileID: 0}
   wordCount: 0
   wordLimit: 20
   spawnCircleRadius: 20
   deathCircleRadius: 25
-  fastestSpeed: 7
-  slowestSpeed: 0.5
+  fastestSpeed: 10
+  slowestSpeed: 1
+  words: []
+  bamboozle: {fileID: 8785499744540531553, guid: 419ee446c4762a1489dbe76d4ab84153, type: 3}
+  enormous: {fileID: 8785499744540531553, guid: 58ccb50c0f6409b449aaf3569571f1fe, type: 3}
+  idea: {fileID: 8785499744540531553, guid: d13f3c11a9197c74986f7e552e1c61fc, type: 3}
+  bland: {fileID: 8785499744540531553, guid: 63ece1b039ff7a0409d46d0976d56780, type: 3}

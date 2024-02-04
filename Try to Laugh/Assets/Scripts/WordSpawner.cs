@@ -11,27 +11,44 @@ using UnityEngine.UIElements;
 
 public class WordSpawner : MonoBehaviour
 {
-    // refernce of the playable game area
+    // references the playable game area
     public GameObject gameArea;
-    // reference of the words
-    public GameObject wordPrefab;
+    // references the word storage
+    public GameObject wordStorage;
 
     // how many words are on screen
     public int wordCount = 0;
     // target and limit amount of words on screen
     public int wordLimit = 20;
-    /// public int wordsPerFrame = 1;
-    /// use this to increase the number of words spawning every frame via a for loop
 
     // radius of the circle words can spawn from
     public float spawnCircleRadius = 35f;
     // radius of the circle words die from by hitting
     public float deathCircleRadius = 40f;
-
     // fastest possible speed of spawned words
     public float fastestSpeed = 10f;
     // slowest possible speed of spawned words
     public float slowestSpeed = 1f;
+
+    // list of all words that can be spawned
+    public List<GameObject> words = new List<GameObject>();
+
+    /// <summary>
+    /// every word reference 
+    /// </summary>
+    public GameObject bamboozle;
+    public GameObject enormous;
+    public GameObject idea;
+    public GameObject bland;
+
+    // Start is called before the first frame
+    private void Start()
+    {
+        words.Add(bamboozle);
+        words.Add(enormous);
+        words.Add(idea);
+        words.Add(bland);
+    }
 
     // Update is called once per frame
     void Update()
@@ -78,7 +95,7 @@ public class WordSpawner : MonoBehaviour
         wordCount++;
         // spawn a new word from outside the game area
         GameObject newWord = Instantiate(
-            wordPrefab, 
+            words[Random.Range(0, words.Count)], 
             position, 
             Quaternion.FromToRotation(Vector3.up, (gameArea.transform.position - position)), 
             this.gameObject.transform);
@@ -89,6 +106,8 @@ public class WordSpawner : MonoBehaviour
         wordScript.wordSpawner = this.gameObject;
         // set the spawned word's game area reference
         wordScript.gameArea = gameArea;
+        // set the spawned word's wordStorage reference
+        wordScript.wordStorage = wordStorage;
         // give the word a random speed within parameters
         wordScript.speed = Random.Range(slowestSpeed, fastestSpeed);
 
