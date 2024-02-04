@@ -516,6 +516,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6a88bef693b01f4d9434ea8b4c30cd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 2367038798353131227, guid: d398852daa507374d981761c11f5c751, type: 3}
+  bulletTransform: {fileID: 1770974362}
+  canFire: 1
+  timeBetweenFiring: 0.3
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
